@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+
+        <div class="card">
+        <h3 class="card-title">{{ post.title }}</h3>
+        <div class="card-body">
+            <p><strong>Author : {{ post.author.email }}</strong></p>
+            <p>{{ post.content }}</p>
+        </div>
+
+
+        </div>
+{% endblock %}
